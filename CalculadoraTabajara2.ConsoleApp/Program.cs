@@ -22,6 +22,11 @@ namespace CalculadoraTabajara2.ConsoleApp
 
                 Console.WriteLine("Tela Principal\n");
 
+                Console.WriteLine("1 - Para Adição ");
+                Console.WriteLine("2 - Para Subtração ");
+                Console.WriteLine("3 - Para Multiplicação ");
+                Console.WriteLine("4 - Para Divisão ");
+
                 Console.WriteLine("Digite S para sair\n");
 
                 Console.Write("Opção: ");
@@ -42,6 +47,22 @@ namespace CalculadoraTabajara2.ConsoleApp
 
                 switch (opcao)
                 {
+                    case "1":
+                        operacao = "Adição";
+                        break;
+
+                    case "2":
+                        operacao = "Multiplicação";
+                        break;
+
+                    case "3":
+                        operacao = "Adição";
+                        break;
+
+                    case "4":
+                        operacao = "Divisão";
+                        break;
+
                     default:
                         break;
                 }
@@ -60,6 +81,22 @@ namespace CalculadoraTabajara2.ConsoleApp
 
                 switch (opcao)
                 {
+                    case "1":
+                        resultado = RealizarAdicao(primeiroNumero, segundoNumero);
+                        break;
+
+                    case "2":
+                        operacao = "Multiplicação";
+                        break;
+
+                    case "3":
+                        operacao = "Adição";
+                        break;
+
+                    case "4":
+                        resultado = RealizarDivisao(primeiroNumero, segundoNumero);
+                        break;
+
                     default:
                         break;
                 }
@@ -81,6 +118,16 @@ namespace CalculadoraTabajara2.ConsoleApp
                 Console.Clear();
                 #endregion
             }
+        }
+
+        private static double RealizarDivisao(double primeiroNumero, double segundoNumero)
+        {
+            return primeiroNumero / segundoNumero;
+        }
+
+        private static double RealizarAdicao(double primeiroNumero, double segundoNumero)
+        {
+            return primeiroNumero + segundoNumero;
         }
     }
 }
