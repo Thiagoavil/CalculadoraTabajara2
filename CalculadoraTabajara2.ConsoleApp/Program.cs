@@ -86,7 +86,7 @@ namespace CalculadoraTabajara2.ConsoleApp
                         break;
 
                     case "2":
-                        operacao = "Multiplicação";
+                        resultado = Subtracao(primeiroNumero, segundoNumero);
                         break;
 
                     case "3":
