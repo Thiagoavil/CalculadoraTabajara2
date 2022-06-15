@@ -129,5 +129,9 @@ namespace CalculadoraTabajara2.ConsoleApp
         {
             return primeiroNumero + segundoNumero;
         }
+        public static double Subtracao(double x1, double x2)
+        {
+            return x1 - x2;
+        }
     }
 }
