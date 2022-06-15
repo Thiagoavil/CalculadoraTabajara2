@@ -52,11 +52,11 @@ namespace CalculadoraTabajara2.ConsoleApp
                         break;
 
                     case "2":
-                        operacao = "Multiplicação";
+                        operacao = "Subtração";
                         break;
 
                     case "3":
-                        operacao = "Adição";
+                        operacao = "Multiplicação";
                         break;
 
                     case "4":
@@ -90,7 +90,7 @@ namespace CalculadoraTabajara2.ConsoleApp
                         break;
 
                     case "3":
-                        operacao = "Adição";
+                        resultado = RealizarMultiplicacao(primeiroNumero, segundoNumero);
                         break;
 
                     case "4":
@@ -118,6 +118,11 @@ namespace CalculadoraTabajara2.ConsoleApp
                 Console.Clear();
                 #endregion
             }
+        }
+
+        private static double RealizarMultiplicacao(double primeiroNumero, double segundoNumero)
+        {
+            return primeiroNumero * segundoNumero;
         }
 
         private static double RealizarDivisao(double primeiroNumero, double segundoNumero)
