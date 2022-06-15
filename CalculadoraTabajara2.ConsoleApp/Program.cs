@@ -82,5 +82,9 @@ namespace CalculadoraTabajara2.ConsoleApp
                 #endregion
             }
         }
+        public static double Subtracao(double x1, double x2)
+        {
+            return x1 - x2;
+        }
     }
 }
